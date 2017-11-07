@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+	<head>
+		<title>Myspace</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+		<meta name="description" content="FlexyCodes - FlexyCard vCard Template. Creating my personal page!" />
+
+		<!-- CSS | bootstrap -->
+		<!-- Credits: http://getbootstrap.com/ -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+		<!-- CSS | font-awesome -->
+		<!-- Credits: http://fortawesome.github.io/Font-Awesome/icons/ -->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+		<!-- CSS | animate -->
+		<!-- Credits: http://daneden.github.io/animate.css/ -->
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+
+		<!-- CSS | Normalize -->
+		<!-- Credits: http://manos.malihu.gr/jquery-custom-content-scroller -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+
+		<!-- CSS | Colors -->
+		<link rel="stylesheet" type="text/css" href="css/colors/DarkBlue.css" id="colors-style" />
+		<link rel="stylesheet" type="text/css" href="css/switcher.css" />
+
+		<!-- CSS | Style -->
+		<!-- Credits: http://themeforest.net/user/FlexyCodes -->
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+		<!-- CSS | prettyPhoto -->
+		<!-- Credits: http://www.no-margin-for-errors.com/ -->
+		<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+
+		<!-- CSS | Google Fonts -->
+		<link href='http://fonts.useso.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
+
+		<!--[if IE 7]>
+                <link rel="stylesheet" type="text/css" href="css/icons/font-awesome-ie7.min.css"/>
+        <![endif]-->
+
+		<style>
+			@media only screen and (max-width: 991px) {
+				.resp-vtabs .resp-tabs-container {
+					margin-left: 13px;
+				}
+			}
+			
+			@media only screen and (min-width: 800px) and (max-width: 991px) {
+				.resp-vtabs .resp-tabs-container {
+					margin-left: 13px;
+					width: 89%;
+				}
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<!-- Laoding page -->
+		<div id="preloader">
+			<div id="spinner"></div>
+		</div>
+
+		<!-- .slideshow -->
+		<ul class="cb-slideshow" id="cb_slideshow" style="display:none">
+			<li><span>Image 01</span>
+				<div></div>
+			</li>
+			<li><span>Image 02</span>
+				<div></div>
+			</li>
+			<li><span>Image 03</span>
+				<div></div>
+			</li>
+			<li><span>Image 04</span>
+				<div></div>
+			</li>
+			<li><span>Image 05</span>
+				<div></div>
+			</li>
+			<li><span>Image 06</span>
+				<div></div>
+			</li>
+		</ul>
+		<!-- /.slideshow -->
+
+		<!-- .wrapper -->
+		<div class="wrapper">
+
+			<!--- .Content -->
+			<section class="tab-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-3 widget-profil">
+									<div class="row">
+
+										<!-- Profile Image -->
+										<div class="col-lg-12 col-md-12 col-sm-3 col-xs-12 ">
+											<div class="image-holder one" id="pic_prof_1" style="display:block">
+												<img class="head-image up circle" src="images/img/left.png" width="150" height="150" alt="" />
+											</div>
+											<!-- style for simple image profile -->
+											<div class="circle-img" id="pic_prof_2" style="display:none"></div>
+										</div>
+
+										<!-- End Profile Image -->
+										<div class="col-lg-12 col-md-12 col-sm-9 col-xs-12">
+
+											<!-- Profile info -->
+											<div id="profile_info">
+												<h1 id="name" class="transition-02">赵瑞虎</h1>
+												<h4 class="line">WEB前端工程师</h4>
+											</div>
+											<!-- End Profile info -->
+
+											<!-- Profile Description -->
+											<div id="profile_desc">
+												<p>
+													雄关漫道真如铁 而今迈步从头越
+												</p>
+											</div>
+											<!-- End Profile Description -->
+
+											<!-- Name -->
+											<div id="profile_social">
+												<h6>My Social Profiles</h6>
+												<a href="#"><i class="fa fa-facebook"></i></a>
+												<a href="#"><i class="fa fa-twitter"></i></a>
+												<a href="#"><i class="fa fa-linkedin"></i></a>
+												<a href="#"><i class="fa fa fa-dribbble"></i></a>
+												<a href="#"><i class="fa fa-foursquare"></i></a>
+												<div class="clear"></div>
+											</div>
+											<!-- End Name -->
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="col-md-9 flexy_content" style="padding-left: 0;padding-right: 0;">
+
+									<!-- verticalTab menu -->
+									<div id="verticalTab">
+
+										<ul class="resp-tabs-list">
+											<li class="tabs-profile hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a profile" data-tab-name="profile">
+												<span class="tite-list">About Me</span>
+												<i class="fa fa-user icon_menu icon_menu_active"></i>
+											</li>
+
+											<li class="tabs-resume hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="resume">
+												<span class="tite-list">SKILL</span>
+												<i class="fa fa-tasks icon_menu"></i>
+											</li>
+
+											<li class="tabs-portfolio hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="portfolio">
+												<span class="tite-list">My Works</span>
+												<i class="fa fa-briefcase icon_menu"></i>
+											</li>
+
+											<li class="tabs-contact hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="contact" style="margin-bottom: 48px !important;">
+												<span class="tite-list">Contact Me</span>
+												<i class="fa fa-envelope icon_menu"></i>
+											</li>
+										</ul>
+										<!-- /resp-tabs-list -->
+
+										<!-- resp-tabs-container -->
+										<div class="resp-tabs-container">
+
+											<!-- profile -->
+											<div id="profile" class="content_2">
+												<!-- .title -->
+												<h1 class="h-bloc">About Me</h1>
+
+												<div class="row top-p">
+													<div class="col-md-6 profile-l">
+
+														<!--About me-->
+														<div class="title_content">
+															<div class="text_content">赵瑞虎</div>
+															<div class="clear"></div>
+														</div>
+
+														<ul class="about">
+
+															<li>
+																<i class="glyphicon glyphicon-user"></i>
+																<label>Name</label>
+																<span class="value">赵瑞虎</span>
+																<div class="clear"></div>
+															</li>
+
+															<li>
+																<i class="glyphicon glyphicon-calendar"></i>
+																<label>Date of birth</label>
+																<span class="value">May 24, 1998</span>
+																<div class="clear"></div>
+															</li>
+
+															<li>
+																<i class="glyphicon glyphicon-envelope"></i>
+																<label>Email</label>
+																<span class="value">zofmailbox@foxmail.com</span>
+																<div class="clear"></div>
+															</li>
+
+															<li>
+																<i class="glyphicon glyphicon-phone"></i>
+																<label>Phone</label>
+																<span class="value">134-6698-1896</span>
+																<div class="clear"></div>
+															</li>
+														</ul>
+
+														<p style="margin-bottom:20px">
+															<i class="fa fa-quote-left"></i> 我才懒得去想我十年后是什么样子，我只在乎十年后的自己怎么看现在的我。 <i class="fa fa-quote-left"></i>
+														</p>
+
+													</div>
+													<!-- End left-wrap -->
+
+													<div class="col-md-6 profile-r">
+
+														<div class="cycle-slideshow">
+															<img src="images/img-profile/about_1.jpg" alt="" />
+															<img src="images/img-profile/about_2.png" alt="" />
+															<img src="images/img-profile/about_3.png" alt="" />
+														</div>
+
+													</div>
+
+												</div>
+
+												<div class="clear"></div>
+
+												<div class="row">
+													<div class="col-md-12">
+														<div class="bottom-p">
+															<div class="title_content">
+																<div class="clear"></div>
+															</div>
+
+														</div>
+													</div>
+
+												</div>
+												<div class="clear"></div>
+											</div>
+											<!-- End .profile -->
+
+											<!-- .resume -->
+											<div id="resume" class="content_2">
+												<!-- .title -->
+												<h1 class="h-bloc">SKILL</h1>
+
+												<div class="row">
+													<!-- .resume-left -->
+													<div class="col-md-10 resume-left">
+														<!-- .title_content -->
+														<div class="title_content" style="margin-bottom:5px">
+															<div class="text_content">技能掌握</div>
+															<div class="clear"></div>
+														</div>
+														<!-- /.title_content -->
+
+														<div class="skills" style="letter-spacing:1px;padding-left: 5%;">
+															1.熟练掌握H5、CSS3、JavaScript、Jquery、Bootstrap。
+															<br /> 2.熟练使用Swiper、iscroll.js、impress.js等多种插件。
+															<br /> 3.熟悉使用sass、less、Sprites精灵、阿里图标库、Font Awesome。
+															<br />4.熟悉AJAX、Vue.2、MUI、zepto.js等框架和插件。
+															<br /> 5.熟悉前端模块化开发：seajs、requireJS、gulp、grunt。
+															<br /> 6.会运用开发工具测试网站的bug，解决浏览器兼容问题以及代码性能优化。
+															<br /> 7.会使用版本管理，如git、SVN。
+															<br /> 8.了解服务器知识和数据库操作。
+															<br /> 9.了解浏览器的运行原理,熟悉http协议,熟悉各种浏览器的hack。
+															<br />
+														</div>
+
+													</div>
+													<!-- /.resume-left -->
+												</div>
+
+												<div style="clear: both"></div>
+
+											</div>
+											<!-- End .resume -->
+
+											<!-- .portfolio -->
+											<div id="portfolio" class="content_2">
+
+												<!-- .title -->
+												<h1 class="h-bloc">My Works</h1>
+
+												<!-- .container-portfolio -->
+												<div class="container-portfolio">
+
+													<!-- #filters -->
+													<ul id="filters" class="clearfix">
+														<li><span class="filter active" data-filter="bootstrap logo">All</span></li>
+														<li><span class="filter" data-filter="bootstrap">bootstrap</span></li>
+													</ul>
+													<!-- /#filters -->
+
+													<!-- #portfoliolist -->
+													<div id="portfoliolist">
+
+														<!-- .portfolio -->
+														<div class="portfolio logo" data-cat="logo">
+															<!-- .portfolio-wrapper -->
+															<div class="portfolio-wrapper">
+																<a href="images/portfolio/1.png" rel="portfolio" title="作品名称:罗纳咖啡 <a style='padding-left:10px;' target='_blank' href='https://spacetoz.github.io/rona/index/index.html'>点此访问</a>">
+																	<img src="images/portfolio/1.png" alt="Visual Infography" />
+																	<div class="label">
+																		<div class="label-text">
+																			<a class="text-title" target="_blank" href="https://spacetoz.github.io/rona/index/index.html">点此访问</a>
+																		</div>
+																		<div class="label-bg"></div>
+																	</div>
+																</a>
+															</div>
+															<!-- /.portfolio-wrapper -->
+														</div>
+														<!-- /.portfolio -->
+
+														<!-- .portfolio -->
+														<div class="portfolio bootstrap" data-cat="bootstrap">
+															<!-- .portfolio-wrapper -->
+															<div class="portfolio-wrapper">
+																<a href="images/portfolio/2.png" rel="portfolio" title="作品名称：驿联 <a style='padding-left:10px;' target='_blank' href='https://spacetoz.github.io/EV/index.html'>点此访问</a>">
+																	<img src="images/portfolio/2.png" alt="Visual Infography" />
+																	<div class="label">
+																		<div class="label-text">
+																			<a class="text-title" target="_blank" href="https://spacetoz.github.io/EV/index.html">点此访问</a>
+																		</div>
+																		<div class="label-bg"></div>
+																	</div>
+																</a>
+															</div>
+															<!-- /.portfolio-wrapper -->
+														</div>
+														<!-- /.portfolio -->
+
+														<!-- .portfolio -->
+														<div class="portfolio bootstrap" data-cat="bootstrap">
+															<!-- .portfolio-wrapper -->
+															<div class="portfolio-wrapper">
+																<a href="images/portfolio/3.png" rel="portfolio" title="作品名称：ECindex <a style='padding-left:10px;' target='_blank' href='https://spacetoz.github.io/EC/index.html'>点此访问</a>">
+																	<img src="images/portfolio/3.png" alt="Sonor's Design" />
+																	<div class="label">
+																		<div class="label-text">
+																			<a class="text-title" target="_blank" href="https://spacetoz.github.io/EC/index.html">点此访问</a>
+																		</div>
+																		<div class="label-bg"></div>
+																	</div>
+																</a>
+															</div>
+															<!-- /.portfolio-wrapper -->
+														</div>
+														<!-- /.portfolio -->
+
+														<!-- .portfolio -->
+														<div class="portfolio bootstrap" data-cat="bootstrap">
+															<!-- .portfolio-wrapper -->
+															<div class="portfolio-wrapper">
+																<a href="images/portfolio/5.png" rel="portfolio" title="作品名称：codester <a style='padding-left:10px;' target='_blank' href='https://spacetoz.github.io/codester/index.html'>点此访问</a>">
+																	<img src="images/portfolio/5.png" alt="Weatherette" />
+																	<div class="label">
+																		<div class="label-text">
+																			<a class="text-title" target="_blank" href="https://spacetoz.github.io/codester/index.html">点此访问</a>
+																		</div>
+																		<div class="label-bg"></div>
+																	</div>
+																</a>
+															</div>
+															<!-- /.portfolio-wrapper -->
+														</div>
+														<!-- /.portfolio -->
+
+														<!-- .portfolio -->
+														<div class="portfolio logo" data-cat="logo">
+															<!-- .portfolio-wrapper -->
+															<div class="portfolio-wrapper">
+																<a href="images/portfolio/8.png" rel="portfolio" title="作品名称：景秀 <a style='padding-left:10px;' target='_blank' href='https://spacetoz.github.io/education/index.html'>点此访问</a>">
+																	<img src="images/portfolio/8.png" alt="KittyPic" />
+																	<div class="label">
+																		<div class="label-text">
+																			<a class="text-title" target="_blank" href="https://spacetoz.github.io/education/index.html">点此访问</a>
+																		</div>
+																		<div class="label-bg"></div>
+																	</div>
+																</a>
+															</div>
+															<!-- /.portfolio-wrapper -->
+														</div>
+														<!-- /.portfolio -->
+
+														<!-- .portfolio -->
+														<div class="portfolio bootstrap" data-cat="bootstrap">
+															<!-- .portfolio-wrapper -->
+															<div class="portfolio-wrapper">
+																<a href="images/portfolio/9.png" title="作品名称：NineStars <a style='padding-left:10px;' target='_blank' href='https://spacetoz.github.io/NineStars/index.html'>点此访问</a>" rel="portfolio">
+																	<img src="images/portfolio/9.png" alt="Graph Plotting" />
+																	<div class="label">
+																		<div class="label-text">
+																			<a class="text-title" target="_blank" href="https://spacetoz.github.io/NineStars/index.html">点此访问</a>
+																		</div>
+																		<div class="label-bg"></div>
+																	</div>
+																</a>
+															</div>
+															<!-- /.portfolio-wrapper -->
+														</div>
+														<!-- /.portfolio -->
+
+														<!-- .portfolio -->
+														<div class="portfolio logo" data-cat="logo">
+															<!-- .portfolio-wrapper -->
+															<div class="portfolio-wrapper">
+																<a href="images/portfolio/11.png" title="作品名称：海尔 <a style='padding-left:10px;' target='_blank' href='https://spacetoz.github.io/haier/index.html'>点此访问</a>" rel="portfolio">
+																	<img src="images/portfolio/11.png" alt="Mobi Sock" />
+																	<div class="label">
+																		<div class="label-text">
+																			<a class="text-title" target="_blank" href="https://spacetoz.github.io/haier/index.html">点此访问</a>
+																		</div>
+																		<div class="label-bg"></div>
+																	</div>
+																</a>
+															</div>
+															<!-- /.portfolio-wrapper -->
+														</div>
+														<!-- /.portfolio -->
+
+														<!-- .portfolio -->
+														<div class="portfolio logo" data-cat="logo">
+															<!-- .portfolio-wrapper -->
+															<div class="portfolio-wrapper">
+																<a href="images/portfolio/12.png" rel="portfolio" title="作品名称：恩恩客 <a style='padding-left:10px;' target='_blank' href='https://spacetoz.github.io/snk/index.html'>点此访问</a>">
+																	<img src="images/portfolio/12.png" alt="Village Community Church" />
+																	<div class="label">
+																		<div class="label-text">
+																			<a class="text-title" target="_blank" href="https://spacetoz.github.io/snk/index.html">点此访问</a>
+																		</div>
+																		<div class="label-bg"></div>
+																	</div>
+																</a>
+															</div>
+															<!-- /.portfolio-wrapper -->
+														</div>
+														<!-- /.portfolio -->
+
+														<!-- .portfolio -->
+														<div class="portfolio logo" data-cat="logo">
+															<!-- .portfolio-wrapper -->
+															<div class="portfolio-wrapper">
+																<a href="images/portfolio/13.png" rel="portfolio" title="作品名称：JANE <a style='padding-left:10px;' target='_blank' href='https://spacetoz.github.io/jane/index.html'>点此访问</a>">
+																	<img src="images/portfolio/13.png" alt="Village Community Church" />
+																	<div class="label">
+																		<div class="label-text">
+																			<a class="text-title" target="_blank" href="https://spacetoz.github.io/jane/index.html">点此访问</a>
+																		</div>
+																		<div class="label-bg"></div>
+																	</div>
+																</a>
+															</div>
+															<!-- /.portfolio-wrapper -->
+														</div>
+														<!-- /.portfolio -->
+
+														<div class="clear"></div>
+
+													</div>
+													<!-- #portfoliolist -->
+												</div>
+												<!-- /.container-portfolio -->
+											</div>
+											<!-- End .portfolio -->
+
+											<!-- .contact -->
+											<div id="contact" class="content_2">
+												<h1 class="h-bloc">Contact Me</h1>
+												<div class="row">
+													<div class="col-lg-12">
+														<div class="row" id="contact-user">
+															<div class="col-md-12">
+																<!-- UY BEGIN -->
+																<div id="uyan_frame"></div>
+																<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2148266"></script>
+																<!-- UY END -->
+															</div>
+
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- End .contact -->
+
+										</div>
+										<!-- End #resp-tabs-container -->
+
+									</div>
+									<!-- End verticalTab -->
+
+								</div>
+								<!-- End flexy_content -->
+
+							</div>
+							<!-- End row -->
+
+						</div>
+						<!-- End col-md-12 -->
+
+					</div>
+					<!-- End row -->
+
+				</div>
+				<!-- End container -->
+
+			</section>
+			<!-- End Content -->
+
+		</div>
+		<!-- End wrapper -->
+
+		<!-- Switcher -->
+		<div id="custumize-style">
+			<h2>Style Selector<a href="#" class="switcher"><i class="fa fa-cogs icon-switcher"></i></a></h2>
+			<div>
+				<h3>Theme Color</h3>
+				<ul class="colors-style" id="color1">
+
+					<li>
+						<a href="#" class="green"></a>
+					</li>
+					<li>
+						<a href="#" class="blue"></a>
+					</li>
+					<li>
+						<a href="#" class="red"></a>
+					</li>
+					<li>
+						<a href="#" class="yellow"></a>
+					</li>
+
+					<li>
+						<a href="#" class="DarkBlue"></a>
+					</li>
+					<li>
+						<a href="#" class="orange"></a>
+					</li>
+					<li>
+						<a href="#" class="rose"></a>
+					</li>
+					<li>
+						<a href="#" class="lightseagreen"></a>
+					</li>
+
+				</ul>
+			</div>
+			<div>
+
+				<h3 class="layouts">Page Animation</h3>
+				<div id="show">
+
+					<select name="one" class="dropdown-select">
+						<optgroup label="Bouncing Entrances">
+							<option value="bounceIn" selected>bounceIn</option>
+							<option value="bounceInDown">bounceInDown</option>
+							<option value="bounceInLeft">bounceInLeft</option>
+							<option value="bounceInRight">bounceInRight</option>
+							<option value="bounceInUp">bounceInUp</option>
+						</optgroup>
+
+						<optgroup label="Fading Entrances">
+							<option value="fadeIn">fadeIn</option>
+							<option value="fadeInDown">fadeInDown</option>
+							<option value="fadeInLeft">fadeInLeft</option>
+							<option value="fadeInRight">fadeInRight</option>
+							<option value="fadeInUp">fadeInUp</option>
+						</optgroup>
+					</select>
+
+				</div>
+
+				<h3 class="layouts" style="padding-top:5px">Background Style</h3>
+				<div id="show">
+
+					<div class="clean-check">
+
+						<input type="radio" id="s1" name="layout" value="bg_color" checked="checked" />
+						<label for="s1"><span></span>Color</label>
+
+						<input type="radio" id="s2" name="layout" value="bg_slider" />
+						<label for="s2"><span></span>Slider</label>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div>
+				<h3>Background Color</h3>
+				<ul class="colors-style bgsolid" id="bgsolid">
+					<li>
+						<a href="#" class="gray-bg"></a>
+					</li>
+					<li>
+						<a href="#" class="green-bg"></a>
+					</li>
+					<li>
+						<a href="#" class="blue-bg"></a>
+					</li>
+					<li>
+						<a href="#" class="red-bg"></a>
+					</li>
+					<li>
+						<a href="#" class="yellow-bg"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<h3>Background Image</h3>
+				<ul class="colors-style bg" id="bg">
+					<li>
+						<a href="#" class="bg1"></a>
+					</li>
+					<li>
+						<a href="#" class="bg2"></a>
+					</li>
+					<li>
+						<a href="#" class="bg3"></a>
+					</li>
+					<li>
+						<a href="#" class="bg4"></a>
+					</li>
+					<li>
+						<a href="#" class="bg5"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="button-reset">
+				<a href="#" class="button color blue boxed">Reset</a>
+			</div>
+		</div>
+		<!-- End Switcher -->
+
+		<!-- jquery | jQuery 1.11.0 -->
+		<!-- Credits: http://jquery.com -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+		<!-- Js | bootstrap -->
+		<!-- Credits: http://getbootstrap.com/ -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<!-- Js | jquery.cycle -->
+		<!-- Credits: https://github.com/malsup/cycle2 -->
+		<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+
+		<!-- jquery | rotate and portfolio -->
+		<!-- Credits: http://jquery.com -->
+		<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript" src="js/HeadImage.js"></script>
+
+		<!-- Js | easyResponsiveTabs -->
+		<!-- Credits: http://webtrendset.com/demo/easy-responsive-tabs/Index.html -->
+		<script type="text/javascript" src="js/easyResponsiveTabs.min.js"></script>
+
+		<!-- Js | jquery.cookie -->
+		<!-- Credits: https://github.com/carhartl/jquery-cookie -->
+		<script type="text/javascript" src="js/jsSwitcher/jquery.cookie.js"></script>
+
+		<!-- Js | switcher -->
+		<!-- Credits: http://themeforest.net/user/FlexyCodes -->
+		<script type="text/javascript" src="js/jsSwitcher/switcher.js"></script>
+
+		<!-- Js | mCustomScrollbar -->
+		<!-- Credits: http://manos.malihu.gr/jquery-custom-content-scroller -->
+		<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+		<!-- jquery | prettyPhoto -->
+		<!-- Credits: http://www.no-margin-for-errors.com/ -->
+		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+
+		<!-- Js | Js -->
+		<!-- Credits: http://themeforest.net/user/FlexyCodes -->
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<!-- code js for image rotate -->
+		<script type="text/javascript">
+			var mouseX;
+			var mouseY;
+			var imageOne;
+
+			/* Calling the initialization function */
+			$(init);
+
+			/* The images need to re-initialize on load and on resize, or else the areas
+			 * where each image is displayed will be wrong. */
+			$(window).load(init);
+			$(window).resize(init);
+
+			/* Setting the mousemove event caller */
+			$(window).mousemove(getMousePosition);
+
+			/* This function is called on document ready, on load and on resize
+			 * and initiallizes all the images */
+			function init() {
+
+				/* Instanciate the mouse position variables */
+				mouseX = 0;
+				mouseY = 0;
+
+				/* Instanciate a HeadImage class for every image */
+				imageOne = new HeadImage("one");
+
+			}
+
+			/* This function is called on mouse move and gets the mouse position. 
+			 * It also calls the HeadImage function to display the correct image*/
+			function getMousePosition(event) {
+
+				/* Setting the mouse position variables */
+				mouseX = event.pageX;
+				mouseY = event.pageY;
+
+				/*Calling the setImageDirection function of the HeadImage class
+				 * to display the correct image*/
+				imageOne.setImageDirection();
+
+			}
+		</script>
+	</body>
+
+</html>
