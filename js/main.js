@@ -107,15 +107,10 @@ jQuery(document).ready(function($) {
 			}
 		});
 
-		if(tab_name == "contact")
-			initialize();
 
 		return false;
 	});
 
-	$("#verticalTab h2.resp-accordion").click(function() {
-		initialize();
-	});
 
 	/* ---------------------------------------------------------------------- */
 	/* ---------------------- redimensionnement ----------------------------- */
@@ -150,9 +145,6 @@ jQuery(document).ready(function($) {
 	window.addEventListener('load', redimensionnement, false);
 	window.addEventListener('resize', redimensionnement, false);
 
-	$("#verticalTab h2.resp-accordion").click(function() {
-		initialize();
-	});
 
 	/* ---------------------------------------------------------------------- */
 	/* -------------------------- Contact Form ------------------------------ */
